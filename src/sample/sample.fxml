@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.5" prefWidth="900.0" style="">
+         <children>
+            <ImageView fitHeight="510.0" fitWidth="909.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="currentWeather" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="38.0" layoutY="34.0" prefHeight="116.0" prefWidth="174.0" text="18⁰ " textAlignment="RIGHT" textFill="#dbdfae" wrapText="true">
+               <font>
+                  <Font name="Arial Narrow" size="100.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentTime" alignment="CENTER" layoutX="647.0" layoutY="34.0" prefHeight="116.0" prefWidth="226.0" text="22:23" textFill="#dbdfae">
+               <font>
+                  <Font name="Arial Narrow" size="90.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentCity" alignment="TOP_CENTER" layoutX="623.0" layoutY="134.0" lineSpacing="10.0" prefHeight="116.0" prefWidth="268.0" text="Kazan" textAlignment="CENTER" textFill="#dbdfae" wrapText="true">
+               <font>
+                  <Font name="Arial Narrow" size="35.0" />
+               </font>
+            </Label>
+            <HBox layoutX="100.0" layoutY="302.0" prefHeight="185.0" prefWidth="724.0" style="-fx-background-color: rgba(0, 0, 0, 0.4); -fx-background-radius: 20;">
+               <children>
+                  <AnchorPane prefHeight="154.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="firstDay" alignment="CENTER" layoutX="5.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="114.0" text="MON" textFill="#dbdfae">
+                           <font>
+                              <Font size="30.0" />
+                           </font></Label>
+                        <Label fx:id="firstWeather" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="100.0" prefHeight="84.0" prefWidth="114.0" text="9⁰" textAlignment="CENTER" textFill="#dbdfae">
+                           <font>
+                              <Font name="System Bold" size="55.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="firstCondition" fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="154.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="secondDay" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="46.0" prefWidth="114.0" text="TUE" textFill="#dbdfae">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="secondWeather" alignment="CENTER" layoutX="5.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="114.0" text="9⁰" textFill="#dbdfae">
+                           <font>
+                              <Font name="System Bold" size="55.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="secondCondition" fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="130.0" layoutY="10.0" prefHeight="154.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="thirdDay" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="46.0" prefWidth="114.0" text="THU" textFill="#dbdfae">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="thirdWeather" alignment="CENTER" layoutX="5.0" layoutY="100.0" prefHeight="84.0" prefWidth="114.0" text="9⁰" textFill="#dbdfae">
+                           <font>
+                              <Font name="System Bold" size="55.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="thirdCondition" fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="250.0" layoutY="10.0" prefHeight="154.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="fourthDay" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="46.0" prefWidth="114.0" text="WEN" textFill="#dbdfae">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fourthWeather" alignment="CENTER" layoutX="5.0" layoutY="100.0" prefHeight="84.0" prefWidth="114.0" text="9⁰" textFill="#dbdfae">
+                           <font>
+                              <Font name="System Bold" size="55.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fourthCondition" fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="370.0" layoutY="10.0" prefHeight="154.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="fifthDay" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="46.0" prefWidth="114.0" text="FRI" textFill="#dbdfae">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fifthWeather" alignment="CENTER" layoutX="5.0" layoutY="100.0" prefHeight="84.0" prefWidth="114.0" text="9⁰" textFill="#dbdfae">
+                           <font>
+                              <Font name="System Bold" size="55.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fifthCondition" fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="490.0" layoutY="10.0" prefHeight="154.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="sixthDay" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="46.0" prefWidth="114.0" text="SAT" textFill="#dbdfae">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sixthWeather" alignment="CENTER" layoutX="5.0" layoutY="100.0" prefHeight="84.0" prefWidth="114.0" text="9⁰" textFill="#dbdfae">
+                           <font>
+                              <Font name="System Bold" size="55.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="sixthCondition" fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <ImageView fx:id="searchButton" fitHeight="24.0" fitWidth="42.0" layoutX="865.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/2.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="searchCity" layoutX="656.0" layoutY="15.0" opacity="0.4" prefHeight="26.0" prefWidth="200.0" promptText="Enter city" style="-fx-background-color: black; -fx-text-fill: white">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font></TextField>
+            <ImageView fx:id="mainWeatherCondition" fitHeight="46.0" fitWidth="54.0" layoutX="215.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="360.0" layoutY="487.0" prefHeight="23.0" prefWidth="226.0" text="© 2020 Sunnatjon&amp;Sultonbek. All rights reserved." textFill="#dbdfae">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</GridPane>
